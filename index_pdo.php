@@ -7,9 +7,9 @@ $reponse = $bdd->query('SELECT * FROM mes_chaussettes');
 <?php 
 while ($donne = $reponse->fetch()) {
 ?>
-	<td><?php echo $donne['id']; ?></td>
-	<!-- Pointure : <?php echo $donne['pointure']; ?>
-	Couleur : <?php echo $donne['couleur']; ?> -->
+	Id: <?php echo $donne['id']; ?><br />
+	Pointure : <?php echo $donne['pointure']; ?>
+	Couleur : <?php echo $donne['couleur']; ?>
 <?php 
 }
 $reponse->closeCursor();
